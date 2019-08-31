@@ -20,7 +20,7 @@ public class Product {
     private String prodDesc;
     @Column(name = "prodPrice", nullable = false)
     private Double prodPrice;
-    @Column(name = "prodImage", nullable = false)
+    @Column(name = "prodImage")
     private String prodImage;
 
     public Product() {
