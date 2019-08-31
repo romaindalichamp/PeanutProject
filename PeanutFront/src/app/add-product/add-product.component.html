@@ -16,14 +16,14 @@
           <input matInput placeholder="Description" formControlName="prodDesc"
                  [errorStateMatcher]="matcher">
           <mat-error>
-            <span *ngIf="!productForm.get('prodDesc').valid && productForm.get('prodDesc').touched">Please enter prod Desc</span>
+            <span *ngIf="!productForm.get('prodDesc').valid && productForm.get('prodDesc').touched">Please enter prod Description</span>
           </mat-error>
         </mat-form-field>
         <mat-form-field class="example-full-width">
-          <input matInput placeholder="Price" formControlName="prodPrice"
+          <input type="number" matInput placeholder="Price" formControlName="prodPrice"
                  [errorStateMatcher]="matcher">
           <mat-error>
-            <span *ngIf="!productForm.get('prodPrice').valid && productForm.get('prodPrice').touched">Please enter Description</span>
+            <span *ngIf="!productForm.get('prodPrice').valid && productForm.get('prodPrice').touched">Please enter a Price</span>
           </mat-error>
         </mat-form-field>
 

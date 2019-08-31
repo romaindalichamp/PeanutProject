@@ -20,9 +20,17 @@ export class HeaderComponent implements OnInit {
       return true;
     }
   }
+  isadmin(){
+      console.log(localStorage.getItem('role_admin')); //bidouille à corriger plus tard
+      if(localStorage.getItem('role_admin')=='ADMIN'){
+          return true;
+      }
+      return false;
+  }
 
   logout() {
     localStorage.removeItem('token');
+    localStorage.removeItem('role_admin');
     this.router.navigate(['login']);
   }
 }

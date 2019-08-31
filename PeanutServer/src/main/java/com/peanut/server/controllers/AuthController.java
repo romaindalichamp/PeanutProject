@@ -3,6 +3,7 @@ import static org.springframework.http.ResponseEntity.ok;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -17,6 +18,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.peanut.server.configs.JwtTokenProvider;
+import com.peanut.server.models.Role;
 import com.peanut.server.models.User;
 import com.peanut.server.repositories.UserRepository;
 import com.peanut.server.services.CustomUserDetailsService;
@@ -44,9 +46,11 @@ public class AuthController {
 		try {
 			String username = data.getEmail();
 			authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(username, data.getPassword()));
-			String token = jwtTokenProvider.createToken(username, this.users.findByEmail(username).getRoles());
+			Set<Role> roles = this.users.findByEmail(username).getRoles();
+			String token = jwtTokenProvider.createToken(username, roles);
 			Map<Object, Object> model = new HashMap<>();
 			model.put("username", username);
+			model.put("roles", roles.toArray());
 			model.put("token", token);
 			return ok(model);
 		} catch (AuthenticationException e) {

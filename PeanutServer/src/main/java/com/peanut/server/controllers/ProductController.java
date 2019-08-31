@@ -33,7 +33,7 @@ public class ProductController {
     }
 
     @GetMapping("/products/{id}")
-    public Product getProduct(@PathVariable("id") String id) {
+    public Product getProduct(@PathVariable("id") long id) {
         return productRepository.findById(id).get();
     }
 
@@ -45,7 +45,7 @@ public class ProductController {
     }
 
     @PutMapping("/products/{id}")
-    ResponseEntity<Product> replaceProduct(@RequestBody Product product, @PathVariable String id) {
+    ResponseEntity<Product> replaceProduct(@RequestBody Product product, @PathVariable long id) {
 
         Optional<Product> productData = productRepository.findById(id);
         if (productData.isPresent()) {
@@ -61,7 +61,10 @@ public class ProductController {
     }
  
     @DeleteMapping("/products/{id}")
-    void deleteProduct(@PathVariable String id) {
-        productRepository.deleteById(id);
+    void deleteProduct(@PathVariable long id) {
+    	
+        //productRepository.deleteById(id); this method can only delete objects with String id
+        Optional<Product> productData = productRepository.findById(id);
+        productRepository.delete(productData.get());
     }
 }

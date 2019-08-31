@@ -28,9 +28,14 @@ export class LoginComponent implements OnInit {
   
   onFormSubmit(form: NgForm) {
     this.authService.login(form).subscribe(res => {
-      console.log(res);
+      var role= "NOT ADMIN";
+      try{
+          role=res.roles[0].role;
+      }catch(error){ }
+      
       if (res.token) {
         localStorage.setItem('token', res.token);
+        localStorage.setItem('role_admin', role); //bidouille temporaire à changer
         this.router.navigate(['products']);
       }
     }, (err) => {
