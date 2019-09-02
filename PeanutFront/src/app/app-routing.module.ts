@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ProductsComponent } from './products/products.component';
-import { LoginComponent } from './auth/login/login.component';
-import { RegisterComponent } from './auth/register/register.component';
+import { ProductsComponent } from './components/products/products.component';
+import { LoginComponent } from './components/login/login.component';
+import { RegisterComponent } from './components/register/register.component';
 import { RouterModule, Routes } from '@angular/router';
-import { AuthGuard } from './auth/auth.guard';
-import { AddProductComponent } from './add-product/add-product.component';
-import { EditProductComponent } from './edit-product/edit-product.component';
+import { AuthGuard } from './guards/auth.guard';
+import { AddProductComponent } from './components/add-product/add-product.component';
+import { EditProductComponent } from './components/edit-product/edit-product.component';
 
 
 const routes: Routes = [

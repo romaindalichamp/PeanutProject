@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { ErrorStateMatcher } from '@angular/material/core';
 import { FormControl, FormGroupDirective, NgForm, FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { Router, ActivatedRoute } from '@angular/router';
-import { AuthService } from '../auth.service';
-import { ProductService } from '../product.service';
+import { AuthService } from '../../api/auth/auth.service';
+import { ProductService } from '../../api/product/product.service';
 
 /** Error when invalid control is dirty, touched, or submitted. */
 export class MyErrorStateMatcher implements ErrorStateMatcher {

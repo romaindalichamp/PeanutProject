@@ -1,10 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppComponent } from './app.component';
-import { ProductsComponent } from './products/products.component';
-import { LoginComponent } from './auth/login/login.component';
-import { RegisterComponent } from './auth/register/register.component';
+import { AppComponent } from './components/app/app.component';
+import { ProductsComponent } from './components/products/products.component';
+import { LoginComponent } from './components/login/login.component';
+import { RegisterComponent } from './components/register/register.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { TokenInterceptor } from './interceptors/token.interceptor';
@@ -22,9 +22,9 @@ import {
   MatCardModule,
   MatFormFieldModule } from '@angular/material';
 
-import { AddProductComponent } from './add-product/add-product.component';
-import { HeaderComponent } from './header/header.component';
-import { EditProductComponent } from './edit-product/edit-product.component';
+import { AddProductComponent } from './components/add-product/add-product.component';
+import { HeaderComponent } from './components/header/header.component';
+import { EditProductComponent } from './components/edit-product/edit-product.component';
 
 @NgModule({
   declarations: [

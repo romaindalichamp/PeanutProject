@@ -1,8 +1,8 @@
 <mat-toolbar class="navbar" color="primary">
-    <span>Projet S & A</span>
+    <span>Peanut</span>
     <ul>
-        <li><a mat-flat-button color="primary" *ngIf="isloginn()" href="" [routerLink]="['/products']">Products</a></li>
-        <li><a mat-flat-button color="primary" *ngIf="isloginn()" href="" [routerLink]="['/addproduct']">Add Products</a></li>
+        <li><a mat-flat-button color="primary" *ngIf="isadmin() && isloginn()" href="" [routerLink]="['/products']">Products</a></li>
+        <li><a mat-flat-button color="primary" *ngIf="isadmin() && isloginn()" href="" [routerLink]="['/addproduct']">Add Products</a></li>
         <li *ngIf="isadmin() && isloginn()">( Admin )</li>
         <li *ngIf="!isadmin() && isloginn()">( Not Admin )</li>
     </ul>
