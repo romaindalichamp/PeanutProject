@@ -1,15 +1,15 @@
 <mat-toolbar class="navbar" color="primary">
     <span>Peanut</span>
     <ul>
-        <li><a mat-flat-button color="primary" *ngIf="isadmin() && isloginn()" href="" [routerLink]="['/products']">Products</a></li>
-        <li><a mat-flat-button color="primary" *ngIf="isadmin() && isloginn()" href="" [routerLink]="['/addproduct']">Add Products</a></li>
-        <li *ngIf="isadmin() && isloginn()">( Admin )</li>
+        <li><a color="primary" *ngIf="isadmin() && isloginn()" href="" [routerLink]="['/products']">Products</a></li>
+        <li><a color="primary" *ngIf="isadmin() && isloginn()" href="" [routerLink]="['/addproduct']">Add Products</a></li>
+        <li *ngIf="isadmin() && isloginn()"><a color="primary" href="#">( Admin )</a></li>
         <li *ngIf="!isadmin() && isloginn()">( Not Admin )</li>
     </ul>
     <span class="login"></span>
     <ul class="">
         <li >
-            <a mat-flat-button color="primary" *ngIf="isloginn()" (click)="logout()">Logout</a>
+            <a color="primary" *ngIf="isloginn()" (click)="logout()">Logout</a>
             <!-- <a mat-flat-button color="primary" *ngIf="!isloginn()" [routerLink]="['/login']">Login</a> -->
         </li>
     </ul>

@@ -17,12 +17,13 @@ const routes: Routes = [
   },
   {
     path: 'products',
-    canActivate: [AuthGuard],
+    canActivate: [AuthGuard],   //AuthGuard is using "canActivate" method, to check if the current user is connected before to redirect to products list
     component: ProductsComponent,
     data: { title: 'List of Products' }
   },
   {
     path: 'edit-product/:id',
+    canActivate: [AuthGuard],
     component: EditProductComponent,
     data: { title: 'Edit Article' }
   },
@@ -41,7 +42,7 @@ const routes: Routes = [
     path: 'register',
     component: RegisterComponent,
     data: { title: 'Register' }
-  }
+  },
 ];
 
 @NgModule({
