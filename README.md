@@ -1,10 +1,8 @@
 # PeanutProject
 CRUD: Angular 8 + Bootstrap + Jquery + Spring Boot 2 + Maven + Spring Security + JPA + Hibernate + MySQL + Java 8
-
+[![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=fukakai_PeanutProject)](https://sonarcloud.io/dashboard?id=fukakai_PeanutProject)
 [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=fukakai_PeanutProject&metric=bugs)](https://sonarcloud.io/dashboard?id=fukakai_PeanutProject)
-
 [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=fukakai_PeanutProject&metric=code_smells)](https://sonarcloud.io/dashboard?id=fukakai_PeanutProject)
-
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=fukakai_PeanutProject&metric=coverage)](https://sonarcloud.io/dashboard?id=fukakai_PeanutProject)
 
 [![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=fukakai_PeanutProject&metric=duplicated_lines_density)](https://sonarcloud.io/dashboard?id=fukakai_PeanutProject)
@@ -22,5 +20,3 @@ CRUD: Angular 8 + Bootstrap + Jquery + Spring Boot 2 + Maven + Spring Security +
 [![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=fukakai_PeanutProject&metric=sqale_index)](https://sonarcloud.io/dashboard?id=fukakai_PeanutProject)
 
 [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=fukakai_PeanutProject&metric=vulnerabilities)](https://sonarcloud.io/dashboard?id=fukakai_PeanutProject)
-
-[![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=fukakai_PeanutProject)](https://sonarcloud.io/dashboard?id=fukakai_PeanutProject)
