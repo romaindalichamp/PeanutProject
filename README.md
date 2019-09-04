@@ -1,5 +1,6 @@
 # PeanutProject
 CRUD: Angular 8 + Bootstrap + Jquery + Spring Boot 2 + Maven + Spring Security + JPA + Hibernate + MySQL + Java 8
+
 [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=fukakai_PeanutProject&metric=bugs)](https://sonarcloud.io/dashboard?id=fukakai_PeanutProject)
 
 [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=fukakai_PeanutProject&metric=code_smells)](https://sonarcloud.io/dashboard?id=fukakai_PeanutProject)
