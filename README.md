@@ -1,7 +1,6 @@
 # PeanutProject
 CRUD: Angular 8 + Bootstrap + Jquery + Spring Boot 2 + Maven + Spring Security + JPA + Hibernate + MySQL + Java 8
 <br/><br/>
-<h1>Peanut Front</h1>
 [![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=peanutprojectclient)](https://sonarcloud.io/dashboard?id=peanutprojectclient)
 <br/>
 [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=peanutprojectclient&metric=bugs)](https://sonarcloud.io/dashboard?id=peanutprojectclient)
@@ -25,5 +24,3 @@ CRUD: Angular 8 + Bootstrap + Jquery + Spring Boot 2 + Maven + Spring Security +
 [![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=peanutprojectclient&metric=sqale_index)](https://sonarcloud.io/dashboard?id=peanutprojectclient)
 <br/>
 [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=peanutprojectclient&metric=vulnerabilities)](https://sonarcloud.io/dashboard?id=peanutprojectclient)
-<h1>Peanut Server</h1>
-[![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=peanutprojectserver)](https://sonarcloud.io/dashboard?id=peanutprojectserver)
